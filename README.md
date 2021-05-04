@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Ethereum HOF Solidity Drizzle 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Alt Text](https://reactjs.org/favicon.ico) ![Alt Text](https://www.trufflesuite.com/img/favicons/favicon.ico)
 
-## Available Scripts
 
-In the project directory, you can run:
+![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Table of Contents**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+[TOC]
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##  Purpose
+This project allow the contract owner to generate a ranking. This ranking is based on the amout of Ether sub to the contract. After a transaction the amout is send to the contract owner and the ranking is lock in the contract.
 
-### `yarn build`
+The main goal is give example of a the integration of drizzle 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##  Technical Stake
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  -  [Reactjs](https://github.com/facebook/react)  front-end
+  -  [Drizzle](https://github.com/trufflesuite/drizzle)  handle the connection to the mainnet
+  -  [Truffle](https://github.com/trufflesuite/truffle) & [Ganache-cli](https://github.com/trufflesuite/ganache-cli)  test
+  -  [Solidity](https://docs.soliditylang.org/en/v0.8.4/)  contract language
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##  Start 
+### Install Truffle
+Truffle is the most popular development environment and testing framework for DApp developers. It helps you to compile, test, and deploy your contracts to the blockchain.
+```bash
+$ npm install -g truffle
+```
 
-### `yarn eject`
+###  Install Ganache
+Ganache is a virtual blockchain for local testing
+```bash
+$ npm install -g ganache-cli
+```
+### Run Ganache
+Before all, you need to start your test blockchain
+```bash
+$ ganache-cli 
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Compile the contract
+The contract need to be compile before used
+```bash
+$ truffle compile
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Start React
+Now start the fron end 
+```bash
+$ npm start 
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Contributing
+The project is used as example of smart contract integration with Drizzle. Please used it, with responsability. 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
